@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Configuración - Oasis Aromático</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <img src="../img/logo.png" alt="Logo">
+
+            <h2>Oasis Aromático</h2>
+
+        </div>
+
+        <nav>
+
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                Inicio
+            </a>
+
+            <a href="productos.html">
+                <i class="fa-solid fa-spray-can-sparkles"></i>
+                Productos
+            </a>
+
+            <a href="inventario.html">
+                <i class="fa-solid fa-boxes-stacked"></i>
+                Inventario
+            </a>
+
+            <a href="proveedores.html">
+
+    <i class="fa-solid fa-truck"></i>
+
+    Proveedores
+
+</a>
+
+            <a href="clientes.html">
+                <i class="fa-solid fa-users"></i>
+                Clientes
+            </a>
+
+            <a href="ventas.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Ventas
+            </a>
+
+            <a href="reportes.html">
+                <i class="fa-solid fa-chart-line"></i>
+                Reportes
+            </a>
+
+            <a class="active" href="configuracion.html">
+                <i class="fa-solid fa-gear"></i>
+                Configuración
+            </a>
+
+            <a href="../index.html">
+
+    <i class="fa-solid fa-right-from-bracket"></i>
+
+    Cerrar sesión
+
+</a>
+
+        </nav>
+
+    </aside>
+
+    <main class="contenido">
+
+        <header>
+
+            <button class="menu-btn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <h1>Configuración</h1>
+
+        </header>
+
+        <section class="tabla">
+
+            <h2>Datos del negocio</h2>
+
+            <form id="formConfiguracion" class="formulario">
+
+                <input
+                    type="text"
+                    id="configNombre"
+                    placeholder="Nombre del negocio">
+
+                <input
+                    type="text"
+                    id="configNit"
+                    placeholder="NIT o identificación">
+
+                <input
+                    type="text"
+                    id="configDireccion"
+                    placeholder="Dirección">
+
+                <input
+                    type="tel"
+                    id="configTelefono"
+                    placeholder="Teléfono">
+
+                <input
+                    type="email"
+                    id="configCorreo"
+                    placeholder="Correo de contacto">
+
+                <select id="configMoneda">
+
+                    <option value="COP">Peso colombiano (COP)</option>
+                    <option value="USD">Dólar estadounidense (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+
+                </select>
+
+                <input
+                    type="number"
+                    id="configStockMinimo"
+                    min="0"
+                    placeholder="Límite de stock bajo">
+
+                <button type="submit">
+
+                    Guardar configuración
+
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="tabla">
+
+            <h2>Seguridad de la cuenta</h2>
+
+            <form id="formSeguridad" class="formulario">
+
+                <input type="password" id="passwordActual" placeholder="Contraseña actual">
+
+                <input type="password" id="passwordNueva" placeholder="Nueva contraseña">
+
+                <input type="password" id="passwordConfirmar" placeholder="Confirmar contraseña">
+
+                <button type="submit">Cambiar contraseña</button>
+
+            </form>
+
+        </section>
+
+        <section class="tabla">
+
+            <h2>Respaldo de información</h2>
+
+            <p class="descripcion-configuracion">
+                Descarga una copia de tus datos o restaura un respaldo anterior.
+            </p>
+
+            <div class="acciones-configuracion">
+
+                <button type="button" id="btnExportarDatos">Descargar respaldo</button>
+
+                <button type="button" id="btnImportarDatos">Restaurar respaldo</button>
+
+                <button type="button" id="btnBorrarDatos" class="boton-peligro">Borrar datos</button>
+
+                <input type="file" id="archivoRespaldo" accept="application/json" hidden>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>

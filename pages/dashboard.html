@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panel Administrativo - Oasis Aromático</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <img src="../img/logo.png" alt="Logo">
+
+            <h2>Oasis Aromático</h2>
+
+        </div>
+         <!-- Opciones del menú -->
+
+        <nav>
+
+    <a class="active" href="dashboard.html">
+
+        <i class="fa-solid fa-house"></i>
+
+        Inicio
+
+    </a>
+
+    <a href="productos.html">
+
+        <i class="fa-solid fa-spray-can-sparkles"></i>
+
+        Productos
+
+    </a>
+
+    <a href="inventario.html">
+
+        <i class="fa-solid fa-boxes-stacked"></i>
+
+        Inventario
+
+    </a>
+
+    <a href="proveedores.html">
+
+    <i class="fa-solid fa-truck"></i>
+
+    Proveedores
+
+</a>
+
+    <a href="clientes.html">
+
+        <i class="fa-solid fa-users"></i>
+
+        Clientes
+
+    </a>
+
+    <a href="ventas.html">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        Ventas
+
+    </a>
+
+    <a href="reportes.html">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        Reportes
+
+    </a>
+
+    <a href="configuracion.html">
+
+        <i class="fa-solid fa-gear"></i>
+
+        Configuración
+
+    </a>
+
+    <a href="../index.html">
+
+    <i class="fa-solid fa-right-from-bracket"></i>
+
+    Cerrar sesión
+
+</a>
+
+        </nav>
+
+    </aside>
+
+     <!-- Contenido principal -->
+    <main class="contenido">
+
+        <header>
+
+            <button class="menu-btn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <div>
+
+                <h1>Panel Administrativo</h1>
+
+                <p>Bienvenida a Oasis Aromático</p>
+
+            </div>
+
+        </header>
+
+        <section class="cards">
+
+            <div class="card">
+
+                <div>
+
+                    <h3>Ventas del mes</h3>
+
+                    <span id="totalVentasDashboard">$0</span>
+
+                </div>
+
+                <i class="fa-solid fa-dollar-sign"></i>
+
+            </div>
+
+            <div class="card">
+
+                <div>
+
+                    <h3>Productos</h3>
+
+                    <span id="totalProductosDashboard">0</span>
+
+                </div>
+
+                <i class="fa-solid fa-spray-can-sparkles"></i>
+
+            </div>
+
+            <div class="card">
+
+                <div>
+
+                    <h3>Clientes</h3>
+
+                    <span id="totalClientesDashboard">0</span>
+
+                </div>
+
+                <i class="fa-solid fa-users"></i>
+
+            </div>
+
+            <div class="card">
+
+                <div>
+
+                    <h3>Stock bajo</h3>
+
+                    <span id="stockBajoDashboard">0</span>
+
+                </div>
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+            </div>
+
+        </section>
+
+        <section class="tabla">
+
+            <h2>Productos recientes</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Perfume</th>
+                        <th>Tipo</th>
+                        <th>Stock</th>
+                        <th>Precio</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="productosDashboard">
+
+                    <tr>
+
+                        <td>Versace Eros</td>
+                        <td>Original</td>
+                        <td>15</td>
+                        <td>$250.000</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>212 VIP</td>
+                        <td>Réplica</td>
+                        <td>20</td>
+                        <td>$90.000</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>One Million</td>
+                        <td>Original</td>
+                        <td>10</td>
+                        <td>$300.000</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>

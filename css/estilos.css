@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #f7edf7,
+        #fde3ef
+    );
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta {
+
+    width: 100%;
+    max-width: 450px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 40px 30px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+
+    width: 100px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+}
+
+h1 {
+
+    text-align: center;
+
+    color: #7b3fe4;
+
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+label {
+
+    display: block;
+
+    margin-top: 18px;
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+.input-box {
+
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    padding: 12px;
+}
+
+.input-box i {
+
+    color: gray;
+
+    margin-right: 10px;
+}
+
+input {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+.olvido {
+
+    display: block;
+
+    text-align: right;
+
+    margin-top: 15px;
+
+    text-decoration: none;
+
+    color: #4f46e5;
+}
+
+button {
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    background: linear-gradient(
+        90deg,
+        #4f46e5,
+        #ec4899
+    );
+
+    transition: 0.3s;
+}
+
+button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.linea {
+
+    display: flex;
+
+    align-items: center;
+
+    margin: 25px 0;
+}
+
+.linea::before,
+.linea::after {
+
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: #ddd;
+}
+
+.linea span {
+
+    margin: 0 15px;
+
+    color: gray;
+}
+
+.registro {
+
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+.registro a {
+
+    text-decoration: none;
+
+    color: #ec4899;
+
+    font-weight: bold;
+}
+
+.cabecera {
+
+    background: linear-gradient(
+        90deg,
+        #4f46e5,
+        #ec4899
+    );
+
+    color: white;
+
+    padding: 25px;
+
+    border-radius: 20px 20px 0 0;
+
+    margin: -40px -30px 30px;
+}
+
+.cabecera h2 {
+
+    text-align: center;
+}
+
+.cabecera p {
+
+    text-align: center;
+
+    margin-top: 8px;
+}
+
+.error {
+
+    background: #ffe5ef;
+
+    border: 1px solid #ffb7d1;
+
+    color: #b4235b;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.oculto {
+
+    display: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .tarjeta {
+
+        padding: 30px 20px;
+    }
+
+    h1 {
+
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+
+        padding: 10px;
+    }
+
+    .tarjeta {
+
+        padding: 25px 15px;
+
+        border-radius: 15px;
+    }
+
+    .logo {
+
+        width: 80px;
+    }
+
+    h1 {
+
+        font-size: 24px;
+    }
+
+    button {
+
+        padding: 14px;
+    }
+}

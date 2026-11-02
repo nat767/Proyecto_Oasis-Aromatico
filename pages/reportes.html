@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reportes - Oasis Aromático</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <img src="../img/logo.png" alt="Logo">
+
+            <h2>Oasis Aromático</h2>
+
+        </div>
+
+        <nav>
+
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                Inicio
+            </a>
+
+            <a href="productos.html">
+                <i class="fa-solid fa-spray-can-sparkles"></i>
+                Productos
+            </a>
+
+            <a href="inventario.html">
+                <i class="fa-solid fa-boxes-stacked"></i>
+                Inventario
+            </a>
+
+            <a href="proveedores.html">
+
+    <i class="fa-solid fa-truck"></i>
+
+    Proveedores
+
+</a>
+
+            <a href="clientes.html">
+                <i class="fa-solid fa-users"></i>
+                Clientes
+            </a>
+
+            <a href="ventas.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Ventas
+            </a>
+
+            <a class="active" href="reportes.html">
+                <i class="fa-solid fa-chart-line"></i>
+                Reportes
+            </a>
+
+            <a href="configuracion.html">
+                <i class="fa-solid fa-gear"></i>
+                Configuración
+            </a>
+
+            <a href="../index.html">
+
+    <i class="fa-solid fa-right-from-bracket"></i>
+
+    Cerrar sesión
+
+</a>
+
+        </nav>
+
+    </aside>
+
+    <main class="contenido">
+
+        <section class="encabezado-reporte">
+
+            <img src="../img/logo.png" alt="Logo de Oasis Aromático">
+
+            <div>
+
+                <h1>Reporte general</h1>
+
+                <p id="nombreNegocioReporte">Oasis Aromático</p>
+
+                <p id="datosNegocioReporte"></p>
+
+                <p id="fechaReporte"></p>
+
+            </div>
+
+        </section>
+
+        <header>
+
+            <button class="menu-btn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <h1>Reportes</h1>
+<!-- Botones del módulo de reportes -->
+<div class="acciones-reportes">
+
+    <button id="btnReporte">
+
+        <i class="fa-solid fa-file-lines"></i>
+
+        Generar reporte
+
+    </button>
+
+    <button id="btnExcel">
+
+        <i class="fa-solid fa-file-excel"></i>
+
+        Exportar Excel
+
+    </button>
+
+</div>
+        </header>
+
+        <section class="cards">
+
+            <div class="card">
+
+                <div>
+
+                    <h3>Ventas del mes</h3>
+
+                    <span id="ventasReporte">$0</span>
+
+                </div>
+
+                <i class="fa-solid fa-dollar-sign"></i>
+
+            </div>
+
+            <div class="card">
+
+                <div>
+
+                    <h3>Clientes registrados</h3>
+
+                    <span id="clientesReporte">0</span>
+
+                </div>
+
+                <i class="fa-solid fa-users"></i>
+
+            </div>
+
+            <div class="card">
+
+                <div>
+
+                    <h3>Productos vendidos</h3>
+
+                    <span id="productosVendidosReporte">0</span>
+
+                </div>
+
+                <i class="fa-solid fa-box"></i>
+
+            </div>
+
+        </section>
+
+        <section class="detalle-reporte">
+
+            <h2>Detalle de ventas</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Total</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="ventasDetalleReporte"></tbody>
+
+            </table>
+
+            <h2>Estado del inventario</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Estado</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="inventarioDetalleReporte"></tbody>
+
+            </table>
+
+            <p class="pie-reporte">Documento generado por el sistema administrativo Oasis Aromático.</p>
+
+        </section>
+
+    </main>
+
+    <script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>

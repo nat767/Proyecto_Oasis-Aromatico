@@ -1,0 +1,17 @@
+# Configuracion privada
+.env
+.env.*
+!.env.example
+/api/config.local.php
+
+# Copias de seguridad
+*.sql
+*.sql.zip
+
+# Dependencias
+/vendor/
+
+# Archivos temporales
+*.log
+.DS_Store
+Thumbs.db

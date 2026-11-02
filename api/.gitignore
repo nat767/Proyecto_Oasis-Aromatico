@@ -1,0 +1,13 @@
+config.local.php
+.env
+.env.*
+!.env.example
+
+*.sql
+*.sql.zip
+
+/vendor/
+
+*.log
+.DS_Store
+Thumbs.db

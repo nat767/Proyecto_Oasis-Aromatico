@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Oasis Aromático</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <!-- INICIO DE SESIÓN -->
+
+        <div class="tarjeta" id="login">
+
+            <img src="img/logo.png" alt="Logo" class="logo">
+
+            <h1>Oasis Aromático</h1>
+
+            <p class="subtitulo">
+                Bienvenido de nuevo
+            </p>
+
+            <div class="error oculto" id="mensajeError">
+
+                <i class="fa-solid fa-circle-xmark"></i>
+
+                <div>
+
+                    <h3>Credenciales incorrectas</h3>
+
+                    <p>
+                        El correo o la contraseña son incorrectos.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <form>
+
+                <label>Correo electrónico</label>
+
+                <div class="input-box">
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        required
+                        placeholder="tu@email.com">
+
+                </div>
+
+                <label>Contraseña</label>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="password"
+                        required
+                        placeholder="••••••••">
+
+                </div>
+
+                <a href="#" class="olvido">
+
+                    ¿Olvidaste tu contraseña?
+
+                </a>
+
+                <button
+                    type="button"
+                    onclick="iniciarSesion()">
+
+                    Iniciar sesión
+
+                </button>
+
+            </form>
+
+            <div class="linea">
+
+                <span>o</span>
+
+            </div>
+
+            <p class="registro">
+
+                ¿No tienes cuenta?
+
+                <a href="#"
+                    onclick="mostrarRegistro()">
+
+                    Regístrate aquí
+
+                </a>
+
+            </p>
+
+        </div>
+
+        <!-- REGISTRO -->
+
+        <div class="tarjeta oculto" id="registro">
+
+            <div class="cabecera">
+
+                <h2>Registro de Usuario</h2>
+
+                <p>
+                    Complete el formulario
+                </p>
+
+            </div>
+
+            <div class="error oculto" id="mensajeRegistro">
+
+                <i class="fa-solid fa-circle-exclamation"></i>
+
+                <div>
+
+                    <h3>Debe registrarse primero</h3>
+
+                    <p>
+                        Complete todos los campos para crear su cuenta.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <form>
+
+                <label>Nombres</label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Ingrese sus nombres"
+                    required>
+
+                <label>Apellidos</label>
+
+                <input
+                    type="text"
+                    id="apellido"
+                    placeholder="Ingrese sus apellidos"
+                    required>
+
+                <label>Correo electrónico</label>
+
+                <input
+                    type="email"
+                    id="correoRegistro"
+                    placeholder="Ingrese su correo"
+                    required>
+
+                <label>Contraseña</label>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="registroPassword"
+                        required
+                        placeholder="Cree una contraseña">
+
+                </div>
+
+                <label>Confirmar contraseña</label>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="confirmarPassword"
+                        required
+                        placeholder="Confirme su contraseña">
+
+                </div>
+
+                <button
+                    type="button"
+                    onclick="registrarUsuario()">
+
+                    Registrarse
+
+                </button>
+
+            </form>
+
+            <p class="registro">
+
+                ¿Ya tienes cuenta?
+
+                <a href="#"
+                    onclick="mostrarLogin()">
+
+                    Iniciar sesión
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="js/login.js"></script>
+
+</body>
+
+</html>

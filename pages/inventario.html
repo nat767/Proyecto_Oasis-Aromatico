@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inventario</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <img src="../img/logo.png">
+
+            <h2>Oasis Aromático</h2>
+
+        </div>
+
+        <nav>
+
+           <a href="dashboard.html">
+
+    <i class="fa-solid fa-house"></i>
+
+    Inicio
+
+</a>
+
+<a href="productos.html">
+
+    <i class="fa-solid fa-spray-can-sparkles"></i>
+
+    Productos
+
+</a>
+
+<a class="active" href="inventario.html">
+
+    <i class="fa-solid fa-boxes-stacked"></i>
+
+    Inventario
+
+</a>
+
+<a href="proveedores.html">
+
+    <i class="fa-solid fa-truck"></i>
+
+    Proveedores
+
+</a>
+
+<a href="clientes.html">
+
+    <i class="fa-solid fa-users"></i>
+
+    Clientes
+
+</a>
+
+<a href="ventas.html">
+
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    Ventas
+
+</a>
+
+<a href="reportes.html">
+
+    <i class="fa-solid fa-chart-line"></i>
+
+    Reportes
+
+</a>
+
+<a href="configuracion.html">
+
+    <i class="fa-solid fa-gear"></i>
+
+    Configuración
+
+</a>
+
+<a href="../index.html">
+
+    <i class="fa-solid fa-right-from-bracket"></i>
+
+    Cerrar sesión
+
+</a>
+
+        </nav>
+
+    </aside>
+
+    <main class="contenido">
+
+        <header>
+
+            <button class="menu-btn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <h1>Inventario</h1>
+
+        </header>
+
+        <section class="tabla">
+
+            <h2>Productos disponibles</h2>
+
+<form id="formInventario" class="formulario">
+
+    <input
+        type="text"
+        id="nombre"
+        placeholder="Nombre del perfume"
+        required>
+
+    <input
+        type="number"
+        id="cantidad"
+        placeholder="Cantidad"
+        required>
+
+    <button type="submit">
+
+        Agregar producto
+
+    </button>
+
+</form>
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Producto</th>
+
+                        <th>Cantidad</th>
+
+                        <th>Estado</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="tablaInventario">
+
+                    <tr>
+
+                        <td>Versace Eros</td>
+
+                        <td>15</td>
+
+                        <td>Disponible</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>212 VIP</td>
+
+                        <td>3</td>
+
+                        <td>Stock bajo</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>
